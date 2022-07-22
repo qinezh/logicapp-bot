@@ -31,10 +31,10 @@ server.post(
     for (const target of await bot.notification.installations()) {
       await target.sendAdaptiveCard(
         AdaptiveCards.declare<CardData>(notificationTemplate).render({
-          title: "New Event Occurred!",
-          appName: "Contoso App Notification",
-          description: `This is a sample http-triggered notification to ${target.type}`,
-          notificationUrl: "https://www.adaptivecards.io/",
+          modified_by: req.body.modified_by,
+          modified_at: req.body.modified_at,
+          asset_id: req.body.asset_id,
+          link: req.body.link,
         })
       );
 

@@ -5,14 +5,14 @@
   "body": [
     {
       "type": "TextBlock",
-      "text": "${title}",
+      "text": "Asset ${asset_id} is modified",
       "size": "Large",
       "weight": "Bolder",
       "wrap": true
     },
     {
       "type": "TextBlock",
-      "text": "${appName}",
+      "text": "Modified by ${modified_by}",
       "isSubtle": true,
       "color": "Accent",
       "weight": "Bolder",
@@ -21,7 +21,7 @@
     },
     {
       "type": "TextBlock",
-      "text": "${description}",
+      "text": "Modified at ${modified_at}",
       "isSubtle": true,
       "wrap": true
     }
@@ -30,7 +30,7 @@
     {
       "type": "Action.OpenUrl",
       "title": "View Details",
-      "url": "${notificationUrl}"
+      "url": "${link}"
     }
   ]
 }

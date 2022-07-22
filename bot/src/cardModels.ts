@@ -3,8 +3,8 @@
  * Adaptive Card syntax.
  */
 export interface CardData {
-  title: string;
-  appName: string;
-  description: string;
-  notificationUrl: string;
+  asset_id: string;
+  link: string;
+  modified_by: string;
+  modified_at: string;
 }
